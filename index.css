@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+ background-color: #F2F1F0;
+}
+
+
+/* NAVBAR STYLE */
+nav {
+    background-color: #043959;
+    height: 40px;
+
+}
+
+nav ul {
+    display: inline;
+    float: right;
+    margin-top: 10px;
+}
+nav li {
+    display: inline;
+    padding: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: roboto;
+}
+
+nav a:active {
+    color:#CCC;
+}
+
+
+/* HEADER STYLE */
+
+header {
+    text-align: center;
+    margin-top:100px;
+    margin-bottom: 100px;
+}
+
+header img {
+    height: 350px;
+}
+
+header h1 {
+    margin-top: 20px;
+    font-family: 'Big John', sans-serif;
+    text-transform: uppercase;
+                                                
+}
+
+header h2 {
+  font-size: 1.3rem;
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+}
+
+/* ABOUT STYLE */
+
+.container-about {
+    display: flex;
+    margin-top: 30px;
+    padding-top: 30px;
+    background-color: #3D507B;
+}
+
+.box {
+    width: 50%;
+    margin-left: 7%;
+    
+}
+
+.box h2 {
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    color:#FFF
+}
+
+.box p {
+    font-family: Roboto;
+    line-height: 2rem;
+    padding-top: 15px;
+    color:#FFF
+}
+
+.box ul {
+    font-family: Roboto;
+    line-height: 1.3em;
+    padding-top: 15px;
+    color:#FFF
+}
+
+.technologies ul {
+    margin-left: 20px;
+}
+
+/* PROJECTS STYLE */
+
+.container-proj {
+    padding-top: 100px;
+    padding-left: 7%;
+    padding-right: 7%;
+    background-color: #3D507B;
+}
+
+.container-proj  h2{
+    font-family: 'Big John', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color:#FFF
+}
+
+.projects {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding-bottom: 200px;
+}
+
+.project-item h3 {
+    font-family: Roboto;
+    font-weight: 700;
+    color:#FFF
+}
+
+.project-item p {
+    font-family: Roboto;
+    font-weight: 100;
+    color:#CCC
+}
+
+.project-item span {
+    font-weight: 700;
+}
+
+
+.project-item img {
+    height: 200px;
+}
+
+.project-item img:hover {
+    height: 260px;
+    transition: height 0.5s;
+}
+
+.project-item img:not(:hover) {
+    height: 250px;
+    transition: height 0.5s;
+}
