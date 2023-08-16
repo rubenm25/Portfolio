@@ -59,7 +59,7 @@
 
           <div class="container-proj">
             <h2>My Projects</h2>
-            <div class="projects">
+            <div id="projects" style="display: none;">
               <div class="project-item">
                 <a href="#"><img src="./Media/hcm.png" alt="Project 1"></a>
                 <h3>www.hcmantistatic.ro</h3>
@@ -76,7 +76,32 @@
                 <p><span class="bold">Technologies:</span> HTML, CSS, Javascript</p>
               </div>
             </div>
-          </div>
+            <div class="btn-wrap">
+              <button id="btn">Show Portfolio</button>
+            </div>
+          </div>   
+
+
+          <script>
+            let btn = document.getElementById('btn');
+            let targetPortfolio = document.getElementById('projects');
+
+            function toggleBtn() {
+              let targetPortfolio = document.getElementById('projects');
+              if (targetPortfolio.style.display === "none") {
+                targetPortfolio.style.display = "flex";
+                btn.innerHTML= 'Hide Portfolio';
+              } else {
+                targetPortfolio.style.display = "none";
+                btn.innerHTML= 'Show Portfolio';
+              }
+            }
+
+            btn.addEventListener('click', toggleBtn);
+
+          </script>  
+          
+          
         </main>
         <script src="" async defer></script>
     </body>

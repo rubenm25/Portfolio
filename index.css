@@ -29,7 +29,7 @@ nav li {
 nav a {
     text-decoration: none;
     color: #FFF;
-    font-family: roboto;
+    font-family: Roboto;
 }
 
 nav a:active {
@@ -145,6 +145,10 @@ header h2 {
     background-color: #3D507B;
 }
 
+.container-proj h2{
+    padding-bottom: 50px;
+}
+
 .container-proj  h2{
     font-family: 'Big John', sans-serif;
     font-size: 2rem;
@@ -152,13 +156,47 @@ header h2 {
     color:#FFF
 }
 
-.projects {
-    display: flex;
+#projects {
+/*    display: none; */
     justify-content:space-between;
     flex-wrap: wrap;
     margin-top: 20px;
-    padding-bottom: 200px;
-}
+    padding-bottom: 50px;
+
+/* FADE IN ANIMATION */
+
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
 
 .project-item h3 {
     font-family: Roboto;
@@ -169,7 +207,7 @@ header h2 {
 .project-item p {
     font-family: Roboto;
     font-weight: 100;
-    color:#CCC
+    color:#CCC;
 }
 
 .project-item span {
@@ -190,3 +228,34 @@ header h2 {
     height: 250px;
     transition: height 0.5s;
 }
+
+.btn-wrap {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
+button {
+    cursor: pointer;
+    width: 125px;
+    height: 50px;
+    font-weight: 700;
+    font-family: Roboto, sans-serif;
+    color: #043959;
+    border: 1px solid #043959;
+    border-radius: 10px;
+    background-color: #FFF;
+}
+
+button:active {
+    background-color: #CCC;
+    transition: background-color 0.2s;
+}
+
+button:not(:active) {
+    background-color: #FFF;
+    transition: background-color 0.2s;
+}
+
+
+
